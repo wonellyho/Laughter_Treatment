@@ -13,6 +13,11 @@
 
 > ### UI
 
+
+![화면 캡처 2024-12-26 164654](https://github.com/user-attachments/assets/bfd69f0e-69d9-427a-922f-dfd25aa6f702)
+
+
+
 </br>
 </br>
 
