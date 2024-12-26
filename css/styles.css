@@ -488,8 +488,8 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 2.25rem;
+  font-weight: 600;
 }
 
 .display-1 {
@@ -8092,6 +8092,12 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
+  margin: 2px 0;
+
+
+  font-size: 1.0rem;
+  font-weight: 600;
+
 }
 
 .text-black-50 {
@@ -10861,7 +10867,7 @@ p {
 .btn-xl {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.125rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -10899,7 +10905,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -10920,7 +10926,7 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 5rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -10980,10 +10986,13 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 6rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
+    background-color: #FFC800;
+    padding: 10px;
+    opacity: 91%
   }
 }
 #portfolio .portfolio-item {
@@ -11313,4 +11322,60 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+
+
+/* 불꽃놀이 CSS */
+.fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.firework {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  opacity: 0;
+  animation: explode 3s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+      transform: scale(0.5);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(2);
+      opacity: 0;
+  }
+}
+
+#label-container {
+  display: flex; /* Useful for easy alignment of child elements */
+  flex-direction: column; /* Stacks children vertically if necessary */
+  justify-content: center; /* Centers children vertically */
+  justify-items: center;
+  align-items: center; /* Centers children horizontally */
+}
+
+#label-container > div {
+  /* Assuming the class is `child-div`, you'd replace it with the actual class or apply directly by element if there’s no class */
+  font-size: 50px; /* Increase the font size, tune as needed */
+  padding: 10px; /* Adjust to give some breathing room, tune as needed */
+  margin: 5px 0; /* Vertical margins to space out if needed */
+}
+
+#cam-model-font{
+
+  font-size: 30px;
+  color:lightpink
 }
